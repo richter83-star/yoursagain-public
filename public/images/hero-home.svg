@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1a2e4c"/>
+      <stop offset="100%" stop-color="#c9a227" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="900" fill="url(#sky)"/>
+  <g transform="translate(720,500)" fill="#f7f5f0" opacity="0.9">
+    <path d="M-160 0 L0 -120 L160 0 L140 0 L140 140 L-140 140 L-140 0 Z"/>
+    <rect x="-120" y="40" width="50" height="60" rx="2" fill="#1a2e4c"/>
+    <rect x="40" y="40" width="50" height="60" rx="2" fill="#1a2e4c"/>
+    <rect x="-30" y="80" width="60" height="60" rx="2" fill="#5d7a6a"/>
+  </g>
+  <text x="720" y="780" text-anchor="middle" font-family="Georgia, serif" font-size="32" fill="#f7f5f0" opacity="0.7">
+    YoursAgain — placeholder hero image
+  </text>
+  <text x="720" y="820" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#f7f5f0" opacity="0.5">
+    Replace with Higgsfield-generated hero-home.jpg
+  </text>
+</svg>
