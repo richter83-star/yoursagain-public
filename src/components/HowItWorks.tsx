@@ -5,12 +5,12 @@ const steps = [
   {
     icon: Search,
     title: "Identify",
-    body: "We scan public records to find cases where a home was sold for more than the tax debt owed.",
+    body: "We analyze public records to find cases where a home was sold for more than the tax debt, interest, penalties, and costs owed.",
   },
   {
     icon: MessageSquare,
     title: "Outreach",
-    body: "A local representative explains your rights in plain language — no pressure, no surprises.",
+    body: "A YoursAgain representative or local partner explains your rights in plain language — no pressure, no surprises.",
   },
   {
     icon: FileCheck,
@@ -20,12 +20,12 @@ const steps = [
   {
     icon: Scale,
     title: "File",
-    body: "If viable, we prepare claims, demand letters, or litigation to recover the surplus.",
+    body: "If viable, we prepare claims, demand letters, or litigation to pursue recovery of the surplus.",
   },
   {
     icon: HandCoins,
     title: "Return",
-    body: "Recovered funds go to a controlled escrow. You receive the majority; we receive a pre-agreed success fee.",
+    body: "Recovered funds go to a controlled trust or escrow account. After the pre-agreed success fee and approved costs, the remainder goes to you.",
   },
 ];
 

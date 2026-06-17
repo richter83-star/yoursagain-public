@@ -5,11 +5,11 @@ import { SectionHeader } from "@/components/SectionHeader";
 const steps = [
   {
     title: "Identification",
-    body: "Our OSINT and records pipeline scans public property-tax, foreclosure, and sale data to identify former owners whose homes were sold for more than the taxes, interest, penalties, and costs owed.",
+    body: "Our public records pipeline scans property-tax, foreclosure, and sale data to identify former owners whose homes were sold for more than the taxes, interest, penalties, and costs owed.",
   },
   {
     title: "Plain-Language Outreach",
-    body: "A local YoursAgain representative contacts the former owner or heirs and explains the situation in normal terms: the home was taken for a tax debt, the government or investor appears to have kept surplus equity, and under current law they may be entitled to recover it.",
+    body: "A YoursAgain representative or local partner contacts the former owner or heirs and explains the situation in normal terms: the home was taken for a tax debt, the government or investor appears to have kept surplus equity, and under current law they may be entitled to pursue recovery.",
   },
   {
     title: "Eligibility and Legal Review",
@@ -17,11 +17,11 @@ const steps = [
   },
   {
     title: "Filing and Enforcement",
-    body: "We prepare and file the required claims, demand letters, or lawsuits to compel the return of surplus equity. We coordinate with impact-litigation partners where it can strengthen pro-homeowner precedent.",
+    body: "We prepare and file the required claims, demand letters, or lawsuits to pursue the return of surplus equity. We coordinate with impact-litigation partners where it can strengthen pro-homeowner precedent.",
   },
   {
     title: "Payout and Transparency",
-    body: "Recovered funds flow into a controlled trust or escrow account. We take the pre-agreed success fee. The majority goes to the homeowner. A plain-English closing statement shows every material number.",
+    body: "Recovered funds flow into a controlled trust or escrow account. We take the pre-agreed success fee. The remainder goes to the homeowner. A plain-English closing statement shows every material number.",
   },
 ];
 

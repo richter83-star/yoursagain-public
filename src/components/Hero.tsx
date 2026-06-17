@@ -20,12 +20,13 @@ export function Hero() {
               Equity Recovery Network
             </p>
             <h1 className="font-serif text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
-              Get back what was never theirs to keep.
+              Reclaim surplus equity that was never the government&apos;s to keep.
             </h1>
             <p className="mt-6 max-w-lg text-lg text-white/80">
-              If your home was sold for more than the tax debt owed, that surplus
-              equity is yours. YoursAgain helps former homeowners recover it —
-              with no upfront fees and no surprises.
+              If your home was sold for more than the tax debt owed, the remaining
+              surplus may be recoverable. YoursAgain helps former homeowners
+              understand their rights and pursue recovery — with no upfront fees
+              and no surprise charges under our standard engagement agreement.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button href="/eligibility" variant="secondary">
@@ -36,14 +37,14 @@ export function Hero() {
               </Button>
             </div>
             <p className="mt-4 text-xs text-white/60">
-              No fees unless we recover. Success-based representation.
+              No fee unless we recover. Subject to your written engagement agreement.
             </p>
           </div>
           <div className="relative hidden md:block">
             <div className="aspect-[4/3] overflow-hidden rounded-lg bg-white/5">
               <Image
-                src="/images/hero-home.svg"
-                alt="A safe, welcoming home at golden hour symbolizing recovered equity"
+                src="/images/hero-home.png"
+                alt="A welcoming home at golden hour symbolizing a second chance after foreclosure"
                 width={720}
                 height={540}
                 className="h-full w-full object-cover"

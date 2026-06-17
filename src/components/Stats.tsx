@@ -1,7 +1,7 @@
 const stats = [
-  { value: "$780M+", label: "Surplus equity taken, 2014–2021" },
-  { value: "8,600+", label: "Homes documented by Pacific Legal Foundation" },
-  { value: "2023", label: "U.S. Supreme Court ruling in Tyler v. Hennepin County" },
+  { value: "$780M+", label: "Surplus equity taken, 2014–2021", source: "Pacific Legal Foundation research" },
+  { value: "8,600+", label: "Homes documented by Pacific Legal Foundation", source: "PLF 'Home Equity Theft' report" },
+  { value: "2023", label: "U.S. Supreme Court ruling in Tyler v. Hennepin County", source: "598 U.S. ___" },
 ];
 
 export function Stats() {
@@ -15,6 +15,7 @@ export function Stats() {
                 {stat.value}
               </p>
               <p className="mt-2 text-sm text-brand-muted">{stat.label}</p>
+              <p className="mt-1 text-xs text-brand-muted/70">{stat.source}</p>
             </div>
           ))}
         </div>

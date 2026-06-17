@@ -3,7 +3,7 @@ import { SectionHeader } from "./SectionHeader";
 const points = [
   {
     title: "You may have a claim and not know it.",
-    body: "Most former owners never learn that keeping surplus equity after a tax sale is unconstitutional under Tyler v. Hennepin County.",
+    body: "Many former owners never learn that keeping surplus equity after a tax sale has been held unconstitutional in some circumstances. In Tyler v. Hennepin County (2023), the Supreme Court ruled that taking surplus equity beyond the debt owed can violate the Fifth Amendment. State laws and procedures still vary widely.",
   },
   {
     title: "The process is overwhelming.",
@@ -11,7 +11,7 @@ const points = [
   },
   {
     title: "No one was built to do this at scale.",
-    body: "The opportunity is spread across thousands of counties and legal regimes. Traditional law firms cannot economically hunt every case.",
+    body: "The opportunity is spread across thousands of counties and legal regimes. Traditional law firms cannot economically pursue every possible case.",
   },
 ];
 
@@ -22,7 +22,7 @@ export function Problem() {
         <SectionHeader
           eyebrow="The Problem"
           title="Home equity theft is real — and still happening."
-          description="Local governments and tax-lien investors kept surplus equity for years. Even after the Supreme Court said stop, most victims never recover what is theirs."
+          description="Local governments and tax-lien investors have kept surplus equity for years in many jurisdictions. Even after the Supreme Court clarified the constitutional limit in 2023, most victims still never recover what is theirs."
         />
         <div className="mt-14 grid gap-8 md:grid-cols-3">
           {points.map((p) => (

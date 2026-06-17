@@ -15,12 +15,12 @@ const pledges = [
   {
     icon: HeartHandshake,
     title: "No hidden extraction",
-    body: "Fees are success-based, disclosed in writing, and capped by agreement. No charges if there is no recovery.",
+    body: "Fees are success-based, disclosed in writing, and capped by your engagement agreement. No fee if there is no recovery.",
   },
   {
     icon: FileLock2,
-    title: "Immutable audit trail",
-    body: "Every investigation, decision, and financial movement is logged and tamper-evident.",
+    title: "Complete audit trail",
+    body: "Every material investigation step, counsel decision, and financial movement is logged for accountability and review.",
   },
 ];
 

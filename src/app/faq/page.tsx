@@ -5,15 +5,15 @@ import { SectionHeader } from "@/components/SectionHeader";
 const faqs = [
   {
     q: "What is surplus equity?",
-    a: "Surplus equity is the amount left over when a foreclosed home is sold for more than the tax debt, interest, penalties, and costs owed. For example, if a $250,000 home is sold to satisfy a $10,000 tax debt, the remaining $240,000 is surplus equity.",
+    a: "Surplus equity is the amount left over when a foreclosed home is sold for more than the tax debt, interest, penalties, and costs owed. For example, if a $250,000 home is sold to satisfy a $10,000 tax debt, the remaining $240,000 is surplus equity. Whether it is recoverable depends on state law and deadlines.",
   },
   {
-    q: "Is it really unconstitutional to keep surplus equity?",
-    a: "Yes. In Tyler v. Hennepin County (2023), the U.S. Supreme Court held that when a county sells a home to satisfy a tax debt and keeps the surplus, it violates the Fifth Amendment’s Takings Clause. Many states have also passed reforms requiring surplus equity to be returned.",
+    q: "Is it unconstitutional to keep surplus equity?",
+    a: "In Tyler v. Hennepin County (2023), the U.S. Supreme Court held that when a county sells a home to satisfy a tax debt and keeps the surplus, it can violate the Fifth Amendment’s Takings Clause. Many states have also passed reforms requiring surplus equity to be returned. The exact rule in your jurisdiction requires a case-by-case review.",
   },
   {
     q: "How much does YoursAgain charge?",
-    a: "YoursAgain operates on a success-based fee. We only collect a fee if we recover surplus equity for you. The exact percentage is disclosed in your engagement agreement before any work begins. There are no upfront fees or surprise charges.",
+    a: "YoursAgain operates on a success-based fee. We only collect a fee if we recover surplus equity for you. The exact percentage is disclosed in your engagement agreement before any work begins. There are no upfront fees or surprise charges under that agreement.",
   },
   {
     q: "How long does the process take?",
@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: "Do I need to pay anything upfront?",
-    a: "No. YoursAgain does not charge upfront fees. If there is no recovery, there is no fee.",
+    a: "No. YoursAgain does not charge upfront fees under its standard engagement agreement. If there is no recovery, there is no fee.",
   },
   {
     q: "What if my home was foreclosed years ago?",
