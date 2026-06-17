@@ -42,8 +42,9 @@ export function Footer() {
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-brand-line pt-6 text-xs text-brand-muted md:flex-row">
           <p>© {new Date().getFullYear()} YoursAgain. All rights reserved.</p>
           <p>
-            Not legal advice. Each case is reviewed by licensed counsel in your
-            jurisdiction.
+            This site provides general information, not legal advice. Your
+            situation depends on specific facts, state law, and deadlines.
+            Consult a qualified attorney before taking action.
           </p>
         </div>
       </div>
