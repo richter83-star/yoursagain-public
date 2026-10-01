@@ -1,19 +1,27 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SectionHeader } from "@/components/SectionHeader";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sources",
+  description:
+    "The legal decisions and research behind the statistics and statements on this site.",
+  alternates: { canonical: "/sources/" },
+};
 
 const sources = [
   {
-    citation: "Tyler v. Hennepin County, 598 U.S. ___ (2023)",
+    citation: "Tyler v. Hennepin County, 598 U.S. 631 (2023)",
     description:
       "U.S. Supreme Court holding that a Minnesota county’s retention of surplus equity above the tax debt owed violated the Fifth Amendment’s Takings Clause.",
-    url: "https://www.supremecourt.gov/opinions/22pdf/22-166_5j7b.pdf",
+    url: "https://www.supremecourt.gov/opinions/22pdf/598us2r27_aplc.pdf",
   },
   {
-    citation: "Pacific Legal Foundation — Home Equity Theft",
+    citation: "Pacific Legal Foundation — Home Equity Theft: Size & Scope",
     description:
-      "Research documenting instances of local governments keeping surplus equity after tax foreclosure across multiple states.",
-    url: "https://pacificlegal.org/issue/home-equity-theft/",
+      "Source of the homepage figures: homeowners in the states studied lost more than $780 million in wealth, and at least 8,500 homes were foreclosed on and sold, from 2014 to 2021. PLF attributes much of the excess to private investors as well as government entities.",
+    url: "https://homeequitytheft.org/size-and-scope",
   },
   {
     citation: "YoursAgain internal case database",

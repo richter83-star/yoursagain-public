@@ -1,5 +1,4 @@
 import { Button } from "./Button";
-import Image from "next/image";
 
 export function Hero() {
   return (
@@ -20,7 +19,7 @@ export function Hero() {
               Equity Recovery Network
             </p>
             <h1 className="font-serif text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
-              Reclaim surplus equity that was never the government&apos;s to keep.
+              Reclaim surplus equity that should have come back to you.
             </h1>
             <p className="mt-6 max-w-lg text-lg text-white/80">
               If your home was sold for more than the tax debt owed, the remaining
@@ -37,19 +36,28 @@ export function Hero() {
               </Button>
             </div>
             <p className="mt-4 text-xs text-white/60">
-              No fee unless we recover. Subject to your written engagement agreement.
+              No fee unless we recover, under your written engagement agreement.
+              You may also file a claim yourself with the county or court at no cost.
             </p>
           </div>
           <div className="relative hidden md:block">
             <div className="aspect-[4/3] overflow-hidden rounded-lg bg-white/5">
-              <Image
-                src="/images/hero-home.png"
-                alt="A welcoming home at golden hour symbolizing a second chance after foreclosure"
-                width={720}
-                height={540}
-                className="h-full w-full object-cover"
-                priority
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet="/images/hero-home-960.webp 960w, /images/hero-home-1440.webp 1440w"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/hero-home-960.jpg"
+                  alt="A welcoming home at golden hour symbolizing a second chance after foreclosure"
+                  width={960}
+                  height={543}
+                  className="h-full w-full object-cover"
+                  fetchPriority="high"
+                />
+              </picture>
             </div>
           </div>
         </div>

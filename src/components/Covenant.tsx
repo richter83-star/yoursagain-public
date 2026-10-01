@@ -32,7 +32,7 @@ export function Covenant() {
           eyebrow="Our Covenant"
           title="Built to help, not to exploit."
           description="Power without constraints becomes predatory. These rules are non-negotiable."
-          className="text-white"
+          tone="dark"
         />
         <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {pledges.map((p) => (

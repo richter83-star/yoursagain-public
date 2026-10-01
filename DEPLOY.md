@@ -1,43 +1,36 @@
 # Deployment
 
-## Static export (simplest)
+## Before the first production deploy
+1. Fill every required field in `src/lib/site.ts` (entity, address, phone, email,
+   attorney/firm). `npm run build` **refuses to build** until they are set.
+2. Work through `CLAIMS.md` and confirm or reword each claim.
 
+## Docker (Coolify / VPS) — recommended
 ```bash
-npm install
-npm run build
+docker build -t yoursagain-public .
+docker run -p 8080:80 yoursagain-public
 ```
+The image builds the static export and serves it with `nginx.conf`, which:
+- redirects plain-HTTP requests (via `X-Forwarded-Proto`) to HTTPS,
+- sends HSTS, CSP, X-Frame-Options, nosniff, Referrer-Policy, Permissions-Policy,
+- uses relative redirects so trailing-slash redirects never drop to HTTP,
+- caches hashed assets for a year.
 
-Upload `dist/` to any static host (Cloudflare Pages, Netlify, GitHub Pages, S3).
+TLS terminates at the proxy in front (Coolify/Traefik). In Coolify, also enable
+"Force HTTPS" for the domain.
 
-Caveats:
-- API routes and middleware are disabled.
-- The client portal login uses demo cookie auth only.
-- Security headers in `next.config.mjs` are ignored; configure them at the CDN/host level.
+## Leads
+The contact form inserts into `public.site_leads` in the Supabase project
+"Dracanus" (`ohapewokvylhzuwcqdgn`) using the public publishable key. Anonymous
+users can only INSERT (no reads). View leads in Supabase → Table editor →
+`site_leads`. Migrations are in `supabase/migrations/`.
 
-## Serverful deploy (recommended for portal)
+Note: free-tier Supabase projects pause after a period of inactivity. If the
+form ever fails, it tells the visitor nothing was saved and shows phone/email.
+Consider a paid plan or a weekly keep-alive, and an email alert on new rows
+(Supabase Database Webhook → n8n).
 
-Deploy to Vercel, Railway, or a self-hosted Node server.
-
-1. Remove `output: "export"` from `next.config.mjs` if you want SSR/ISR.
-2. Restore the API routes in `src/app/api/client/...` and `src/middleware.ts`.
-3. Configure environment variables in `.env.local`.
-4. Set security headers at the host level or rely on `next.config.mjs` headers.
-
-## TLS
-
-The production domain `yoursagain.net` currently uses a self-signed certificate.
-Before launch, replace it with a valid certificate from Let's Encrypt or your host.
-
-## Recommended production architecture
-
-```
-CDN / edge
-  ├── yoursagain.net (marketing pages, static)
-  └── portal.yoursagain.net (authenticated client portal, serverful)
-
-Client Service API (separate service)
-  └── reads from sanitized client_cases view, isolated from operator DB
-
-Operator Dashboard (existing private app)
-  └── operators update case status; changes propagate to client view
+## Local preview with placeholders
+```bash
+ALLOW_INCOMPLETE_SITE=1 npm run build   # writes dist/
 ```

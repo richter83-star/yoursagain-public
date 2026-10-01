@@ -9,12 +9,12 @@ export function CTA() {
         </h2>
         <p className="mt-4 text-lg text-brand-muted">
           Start with a free eligibility check. If we cannot help, we will tell you
-          directly — and your information stays yours.
+          directly — and your information stays yours. You can also file a claim
+          yourself with the county or court at no cost.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <Button href="/eligibility">Check Eligibility</Button>
           <Button href="/contact" variant="outline">Talk to a Specialist</Button>
-          <Button href="/portal" variant="outline">Client Login</Button>
         </div>
       </div>
     </section>

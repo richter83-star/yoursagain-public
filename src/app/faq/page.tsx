@@ -1,6 +1,15 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SectionHeader } from "@/components/SectionHeader";
+import { SITE } from "@/lib/site";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "FAQ",
+  description:
+    "Answers about surplus equity after tax foreclosure, fees, timelines, filing a claim yourself, and how YoursAgain works.",
+  alternates: { canonical: "/faq/" },
+};
 
 const faqs = [
   {
@@ -12,8 +21,16 @@ const faqs = [
     a: "In Tyler v. Hennepin County (2023), the U.S. Supreme Court held that when a county sells a home to satisfy a tax debt and keeps the surplus, it can violate the Fifth Amendment’s Takings Clause. Many states have also passed reforms requiring surplus equity to be returned. The exact rule in your jurisdiction requires a case-by-case review.",
   },
   {
+    q: "Can I claim the surplus myself?",
+    a: "Often, yes. In many states you can file a claim for surplus funds directly with the county, court, or state agency that handled the sale, at no cost. You are never required to use YoursAgain. People usually work with us when records are hard to find, deadlines are close, the claim is disputed, or they would rather not handle the process alone.",
+  },
+  {
+    q: "Is YoursAgain a law firm?",
+    a: `No. YoursAgain finds potential cases, gathers records, and coordinates the process. Legal work, including reviewing and filing claims, demand letters, and litigation, is performed by ${SITE.legalPartner || "licensed attorneys in the relevant state"}.`,
+  },
+  {
     q: "How much does YoursAgain charge?",
-    a: "YoursAgain operates on a success-based fee. We only collect a fee if we recover surplus equity for you. The exact percentage is disclosed in your engagement agreement before any work begins. There are no upfront fees or surprise charges under that agreement.",
+    a: `YoursAgain operates on a success-based fee. We only collect a fee if surplus equity is recovered for you.${SITE.feeRange ? ` Our fee is ${SITE.feeRange}.` : ""} The exact percentage is shown in your written engagement agreement before any work begins. There are no upfront fees or surprise charges under that agreement.`,
   },
   {
     q: "How long does the process take?",
@@ -33,7 +50,7 @@ const faqs = [
   },
   {
     q: "How do I check the status of my claim?",
-    a: "Once you become a client, you can log in to the secure YoursAgain client portal at any time to view your case status, documents, messages, and expected next steps.",
+    a: "Your case manager sends updates by email or phone at each major step, and you can contact us at any time. A secure online client portal is in development.",
   },
 ];
 

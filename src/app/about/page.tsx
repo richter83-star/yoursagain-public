@@ -2,6 +2,14 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Button } from "@/components/Button";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "What YoursAgain does, how it works with licensed attorneys, and the covenant that limits how it operates.",
+  alternates: { canonical: "/about/" },
+};
 
 export default function About() {
   return (
@@ -16,8 +24,8 @@ export default function About() {
             />
             <div className="prose prose-lg mx-auto mt-10 text-brand-ink">
               <p>
-                YoursAgain is an equity-recovery network. We combine AI, public
-                records analysis, and local partners to identify former
+                YoursAgain is an equity-recovery network. We combine
+                public-records analysis, technology, and local partners to identify former
                 homeowners whose properties were sold for more than the tax
                 debt owed — and to help them recover surplus equity that should
                 have been returned.
@@ -39,11 +47,12 @@ export default function About() {
                 three problems without becoming another predatory actor.
               </p>
               <p>
-                We are structured as a distributed network: a central research
-                and legal spine supports state-level entities and county-level
-                partners. Independent legal review monitors every jurisdiction,
-                sets risk thresholds, and ensures that a problem in one county
-                cannot compromise the whole network.
+                YoursAgain is not a law firm. Legal work — reviewing claims and
+                filing them, sending demand letters, and litigation — is performed
+                by licensed attorneys in the relevant state. We find cases, gather
+                records, track deadlines, and keep you informed. You can always
+                file a surplus claim yourself, directly with the county or court,
+                at no cost.
               </p>
               <p>
                 Our work is governed by an explicit covenant: we do not cause

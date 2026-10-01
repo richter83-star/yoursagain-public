@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Merriweather } from "next/font/google";
 import "./globals.css";
+import { SITE } from "@/lib/site";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -16,21 +17,22 @@ const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
-  title: "YoursAgain — Recover Surplus Equity After Tax Foreclosure",
+  metadataBase: new URL(SITE.url),
+  title: {
+    default: "YoursAgain — Recover Surplus Equity After Tax Foreclosure",
+    template: "%s | YoursAgain",
+  },
   description:
-    "YoursAgain is an equity-recovery network that uses AI and local partners to return stolen home equity to former owners after unconstitutional or abusive tax foreclosures.",
-  keywords: [
-    "home equity theft",
-    "tax foreclosure",
-    "surplus equity",
-    "Tyler v Hennepin County",
-    "equity recovery",
-  ],
+    "If your home was sold at a tax foreclosure for more than the debt owed, the surplus may be recoverable. YoursAgain helps former homeowners understand their options, with no upfront fees.",
+  alternates: { canonical: "/" },
   openGraph: {
     title: "YoursAgain — Recover Surplus Equity After Tax Foreclosure",
     description:
-      "Return the surplus. Keep what is yours. YoursAgain helps former homeowners recover equity taken after tax foreclosure.",
+      "Helping former homeowners recover surplus equity after tax foreclosure. No upfront fees; you can also file a claim yourself.",
     type: "website",
+    url: SITE.url,
+    siteName: "YoursAgain",
+    images: [{ url: "/images/hero-home-1440.webp", width: 1440, height: 814 }],
   },
 };
 

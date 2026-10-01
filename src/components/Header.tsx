@@ -51,8 +51,8 @@ export function Header() {
         </nav>
 
         <div className="hidden md:block">
-          <Button href="/portal" variant="outline">
-            Client Login
+          <Button href="/eligibility" variant="outline">
+            Check Eligibility
           </Button>
         </div>
 
@@ -60,6 +60,7 @@ export function Header() {
           className="md:hidden"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
+          aria-expanded={open}
         >
           {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
@@ -78,8 +79,8 @@ export function Header() {
                 {label}
               </Link>
             ))}
-            <Button href="/portal" variant="outline" className="mt-2">
-              Client Login
+            <Button href="/eligibility" variant="outline" className="mt-2">
+              Check Eligibility
             </Button>
           </nav>
         </div>

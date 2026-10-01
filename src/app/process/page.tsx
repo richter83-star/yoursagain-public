@@ -1,6 +1,14 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SectionHeader } from "@/components/SectionHeader";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Process",
+  description:
+    "The five steps from identifying a surplus to returning recovered equity, with attorney review and written fee disclosure.",
+  alternates: { canonical: "/process/" },
+};
 
 const steps = [
   {
@@ -13,11 +21,11 @@ const steps = [
   },
   {
     title: "Eligibility and Legal Review",
-    body: "State counsel reviews the foreclosure history, sale price, applicable statutes, case law, deadlines, and filing windows. If the case is viable, we offer a clear engagement agreement. If not, we say so directly.",
+    body: "A licensed attorney in your state reviews the foreclosure history, sale price, applicable statutes, case law, deadlines, and filing windows. If the case is viable, you receive a clear written engagement agreement showing the fee before any work begins. If not, we say so directly. You may also choose to file a claim yourself, at no cost, with the county or court.",
   },
   {
     title: "Filing and Enforcement",
-    body: "We prepare and file the required claims, demand letters, or lawsuits to pursue the return of surplus equity. We coordinate with impact-litigation partners where it can strengthen pro-homeowner precedent.",
+    body: "Licensed attorneys prepare and file the required claims, demand letters, or lawsuits to pursue the return of surplus equity. YoursAgain gathers records, tracks deadlines, and keeps you informed.",
   },
   {
     title: "Payout and Transparency",

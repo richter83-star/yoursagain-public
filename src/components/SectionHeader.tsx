@@ -5,11 +5,14 @@ export function SectionHeader({
   title,
   description,
   className,
+  tone = "light",
 }: {
   eyebrow?: string;
   title: string;
   description?: string;
   className?: string;
+  /** "dark" = header sits on a dark (navy) background. */
+  tone?: "light" | "dark";
 }) {
   return (
     <div className={cn("mx-auto max-w-3xl text-center", className)}>
@@ -18,11 +21,11 @@ export function SectionHeader({
           {eyebrow}
         </p>
       ) : null}
-      <h2 className="font-serif text-3xl font-bold text-brand-navy md:text-4xl">
+      <h2 className={cn("font-serif text-3xl font-bold md:text-4xl", tone === "dark" ? "text-white" : "text-brand-navy")}>
         {title}
       </h2>
       {description ? (
-        <p className="mt-4 text-lg text-brand-muted">{description}</p>
+        <p className={cn("mt-4 text-lg", tone === "dark" ? "text-white/75" : "text-brand-muted")}>{description}</p>
       ) : null}
     </div>
   );

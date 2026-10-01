@@ -15,12 +15,12 @@ const steps = [
   {
     icon: FileCheck,
     title: "Review",
-    body: "State counsel reviews the foreclosure history, sale price, deadlines, and legal path.",
+    body: "A licensed attorney in your state reviews the foreclosure history, sale price, deadlines, and legal path.",
   },
   {
     icon: Scale,
     title: "File",
-    body: "If viable, we prepare claims, demand letters, or litigation to pursue recovery of the surplus.",
+    body: "If viable, your attorney files the claim, demand letter, or lawsuit. We coordinate records and paperwork.",
   },
   {
     icon: HandCoins,

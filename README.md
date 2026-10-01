@@ -19,7 +19,8 @@ Public-facing marketing site + secure client portal for YoursAgain.
 
 - `next.config.mjs` sets strict security headers (CSP, frame options, etc.).
   Note: headers are only applied by a serverful host; static export strips them.
-- Client portal currently uses demo cookie auth. Production requires real
+- The online client portal is not live (the /portal page explains how clients
+  get updates). A real portal requires real
   auth (password + MFA or magic links), row-level data filtering, and audit
   logging.
 - No operator data, OSINT tools, or other clients are exposed.
